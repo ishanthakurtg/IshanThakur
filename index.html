@@ -285,13 +285,11 @@ src="https://www.facebook.com/tr?id=1637391624700705&ev=PageView&noscript=1"
      META PIXEL - TELEGRAM JOIN EVENT
      -------------------------------- */
 
-  function trackTelegramJoin() {
-
-    if (typeof fbq === 'function') {
-
-      fbq('track', 'Subscribe', {
-        value: 1,
-        currency: 'INR'
+ function trackTelegramJoin() {
+  if (typeof fbq === 'function') {
+    fbq('track', 'CompleteRegistration');
+  }
+}
       });
 
     }
