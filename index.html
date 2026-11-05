@@ -1,9 +1,9 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
 <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width,initial-scale=1" />
-<title>ISHAN ADS </title>
+<title>ISHAN ADS</title>
 
 <!-- Meta Pixel Code -->
 <script>
@@ -15,17 +15,17 @@ n.queue=[];t=b.createElement(e);t.async=!0;
 t.src=v;s=b.getElementsByTagName(e)[0];
 s.parentNode.insertBefore(t,s)}(window, document,'script',
 'https://connect.facebook.net/en_US/fbevents.js');
+
 fbq('init', '1637391624700705');
 fbq('track', 'PageView');
 </script>
-<noscript><img height="1" width="1" style="display:none"
+
+<noscript>
+<img height="1" width="1" style="display:none"
 src="https://www.facebook.com/tr?id=1637391624700705&ev=PageView&noscript=1"
-/></noscript>
+/>
+</noscript>
 <!-- End Meta Pixel Code -->
-
-
-
-
 
 <style>
   :root {
@@ -35,41 +35,43 @@ src="https://www.facebook.com/tr?id=1637391624700705&ev=PageView&noscript=1"
     --btn-border: #ffffff;
   }
 
-  html,body{
-    height:100%;
-    margin:0;
-    padding:0;
+  html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
     font-family: "Poppins", "Segoe UI", Arial, sans-serif;
   }
-  body{
+
+  body {
     background: url('ISHAN.jpg') center/cover no-repeat fixed;
-    position:relative;
-    color:var(--white);
-    -webkit-font-smoothing:antialiased;
+    position: relative;
+    color: var(--white);
+    -webkit-font-smoothing: antialiased;
   }
 
-  .bg-overlay{
-    position:fixed; inset:0;
+  .bg-overlay {
+    position: fixed;
+    inset: 0;
     background: rgba(0,0,0,0.55);
     backdrop-filter: blur(4px);
-    z-index:0;
+    z-index: 0;
   }
 
-  .wrap{
-    position:relative;
-    z-index:2;
-    min-height:100vh;
-    display:flex;
-    align-items:center;
-    justify-content:center;
-    padding:28px;
-    box-sizing:border-box;
+  .wrap {
+    position: relative;
+    z-index: 2;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 28px;
+    box-sizing: border-box;
   }
 
   .card {
     width: 100%;
     max-width: 520px;
-    text-align:center;
+    text-align: center;
     padding: 18px 20px;
     color: #fff;
   }
@@ -84,10 +86,9 @@ src="https://www.facebook.com/tr?id=1637391624700705&ev=PageView&noscript=1"
   .subtitle {
     font-size: 16px;
     color: rgba(255,255,255,0.9);
-    margin-bottom:18px;
+    margin-bottom: 18px;
   }
 
-  /* circular profile */
   .profile {
     width: 130px;
     height: 130px;
@@ -104,6 +105,7 @@ src="https://www.facebook.com/tr?id=1637391624700705&ev=PageView&noscript=1"
     color: rgba(255,255,255,0.85);
     font-size: 16px;
   }
+
   .count {
     font-size: 52px;
     font-weight: 800;
@@ -125,12 +127,11 @@ src="https://www.facebook.com/tr?id=1637391624700705&ev=PageView&noscript=1"
     font-size: 14px;
   }
 
-  /* animated button */
   .btn-join {
-    display:inline-flex;
-    align-items:center;
-    justify-content:center;
-    gap:10px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
     margin: 24px auto 10px;
     background: var(--btn-bg);
     color: var(--white);
@@ -145,14 +146,24 @@ src="https://www.facebook.com/tr?id=1637391624700705&ev=PageView&noscript=1"
   }
 
   @keyframes popup {
-    0%, 100% { transform: scale(1); }
-    50% { transform: scale(1.08); }
+    0%, 100% {
+      transform: scale(1);
+    }
+    50% {
+      transform: scale(1.08);
+    }
   }
 
   @keyframes pulseColor {
-    0% { background-color: #0b1b4a; }
-    50% { background-color: #152b7b; }
-    100% { background-color: #0b1b4a; }
+    0% {
+      background-color: #0b1b4a;
+    }
+    50% {
+      background-color: #152b7b;
+    }
+    100% {
+      background-color: #0b1b4a;
+    }
   }
 
   .btn-join:hover {
@@ -163,59 +174,156 @@ src="https://www.facebook.com/tr?id=1637391624700705&ev=PageView&noscript=1"
   .footer-credit {
     margin-top: 18px;
     color: rgba(255,215,0,0.95);
-    font-weight:700;
+    font-weight: 700;
     font-size: 14px;
   }
-  .footer-credit a { color: rgba(255,215,0,0.95); text-decoration:none; }
 
-  @media (max-width:480px){
-    .title { font-size: 28px; }
-    .profile { width:110px; height:110px; }
-    .count { font-size:42px; }
-    .btn-join { font-size:18px; padding:14px 22px; border-radius:36px; }
+  .footer-credit a {
+    color: rgba(255,215,0,0.95);
+    text-decoration: none;
+  }
+
+  @media (max-width:480px) {
+    .title {
+      font-size: 28px;
+    }
+
+    .profile {
+      width: 110px;
+      height: 110px;
+    }
+
+    .count {
+      font-size: 42px;
+    }
+
+    .btn-join {
+      font-size: 18px;
+      padding: 14px 22px;
+      border-radius: 36px;
+    }
   }
 </style>
 </head>
+
 <body>
 
 <div class="bg-overlay"></div>
 
 <div class="wrap">
   <div class="card">
-    <div class="title">𝐈𝐒𝐇𝐀𝐍 𝐓𝐇𝐀𝐊𝐔𝐑 ™
-</div>
-    <div class="subtitle">India's No.1 Trending ISHAN THAKUR 💯</div>
 
-    <div id="profile" class="profile" style="background-image: url('ISHAN.jpg');"></div>
+    <div class="title">𝐈𝐒𝐇𝐀𝐍 𝐓𝐇𝐀𝐊𝐔𝐑 ™</div>
 
-    <div class="joining-line">FREE JOINING ENDS IN...</div>
-    <div class="count" id="countNum">43</div>
+    <div class="subtitle">
+      India's No.1 Trending ISHAN THAKUR 💯
+    </div>
 
-    <div class="userline">@IshanManager</div>
-    <div class="request">Request access — approvals are quick ⬇</div>
+    <div
+      id="profile"
+      class="profile"
+      style="background-image: url('ISHAN.jpg');">
+    </div>
 
-    <a id="joinBtn" class="btn-join" href="https://t.me/+mzXpoJXbbhhjMTM1" target="_blank">
+    <div class="joining-line">
+      FREE JOINING ENDS IN...
+    </div>
+
+    <div class="count" id="countNum">
+      43
+    </div>
+
+    <div class="userline">
+      @IshanManager
+    </div>
+
+    <div class="request">
+      Request access — approvals are quick ⬇
+    </div>
+
+    <!-- TELEGRAM JOIN BUTTON -->
+    <a
+      id="joinBtn"
+      class="btn-join"
+      href="https://t.me/+mzXpoJXbbhhjMTM1"
+      target="_blank"
+      rel="noopener noreferrer"
+      onclick="trackTelegramJoin();"
+    >
       Join Now Telegram Channel
-      <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none">
-        <path d="M21 4L3 10.5L10 13.5L13 21L15 13.5L21 4Z" fill="#fff"/>
+
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        width="22"
+        height="22"
+        viewBox="0 0 24 24"
+        fill="none"
+      >
+        <path
+          d="M21 4L3 10.5L10 13.5L13 21L15 13.5L21 4Z"
+          fill="#fff"
+        />
       </svg>
     </a>
 
-    <div class="footer-credit"><a href="https://t.me/ishanthakurtipper" target="_blank">ISHAN Ads
+    <div class="footer-credit">
+      <a
+        href="https://t.me/ishanthakurtipper"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        ISHAN Ads
+      </a>
+    </div>
+
   </div>
 </div>
 
 <script>
-  (function(){
+
+  /* --------------------------------
+     META PIXEL - TELEGRAM JOIN EVENT
+     -------------------------------- */
+
+  function trackTelegramJoin() {
+
+    if (typeof fbq === 'function') {
+
+      fbq('track', 'Subscribe', {
+        value: 1,
+        currency: 'INR'
+      });
+
+    }
+
+  }
+
+
+  /* --------------------------------
+     COUNTDOWN
+     -------------------------------- */
+
+  (function() {
+
     let n = 43;
+
     const el = document.getElementById('countNum');
-    setInterval(()=>{
+
+    setInterval(function() {
+
       n--;
-      if(n <= 0) n = 43;
+
+      if (n <= 0) {
+        n = 43;
+      }
+
       el.textContent = n;
-    },1000);
+
+    }, 1000);
+
   })();
+
 </script>
 
 </body>
-</html> 
+</html>
